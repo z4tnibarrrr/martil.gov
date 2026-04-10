@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الميزانية المفتوحة — جماعة مرتيل</title>
+  <meta name="description" content="الميزانية المفتوحة لجماعة مرتيل: ميزانيات الجماعة، ميزانية المواطن والقوائم المالية." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body data-inject="true" data-page="budget">
+<div id="site-header-mount"></div>
+
+<main id="main-content">
+  <section class="page-hero">
+    <div class="container">
+      <h1>الميزانية المفتوحة</h1>
+      <nav class="breadcrumb" aria-label="مسار التنقل">
+        <a href="index.html">الرئيسية</a>
+        <span>›</span>
+        <span aria-current="page">الميزانية المفتوحة</span>
+      </nav>
+    </div>
+  </section>
+
+  <section class="page-content">
+    <div class="container">
+
+      <!-- Intro banner -->
+      <div style="background:linear-gradient(135deg,var(--primary-dark),var(--primary));border-radius:var(--radius-md);padding:2rem;color:#fff;margin-bottom:2.5rem;display:flex;align-items:center;gap:1.5rem" data-reveal>
+        <div style="font-size:3rem">📊</div>
+        <div>
+          <h2 style="font-size:1.3rem;margin-bottom:0.5rem">الشفافية المالية مبدأ راسخ</h2>
+          <p style="color:rgba(255,255,255,0.85);font-size:0.9rem">تلتزم جماعة مرتيل بنشر ميزانياتها وحساباتها المالية وفق مبادئ الحكامة الجيدة والشفافية، لضمان حق المواطنين في الاطلاع والرقابة.</p>
+        </div>
+      </div>
+
+      <div class="tab-wrapper">
+        <div class="tab-nav" role="tablist">
+          <button class="tab-btn active" data-tab="budgets" role="tab">ميزانيات الجماعة</button>
+          <button class="tab-btn" data-tab="citizen" role="tab">ميزانية المواطن</button>
+          <button class="tab-btn" data-tab="financial" role="tab">القوائم المالية</button>
+        </div>
+
+        <div class="tab-panel active" id="budgets" role="tabpanel">
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem">
+            <div class="content-card" style="text-align:center" data-reveal>
+              <div style="font-size:2rem;margin-bottom:0.75rem">📋</div>
+              <h3>ميزانية 2025</h3>
+              <p>الميزانية السنوية المعتمدة لسنة 2025</p>
+              <div style="display:flex;flex-direction:column;gap:0.5rem;margin-top:1rem">
+                <a href="#" onclick="alert('الملف قيد التحضير')" class="download-btn" style="justify-content:center"><span class="icon"><i class="fas fa-file-pdf"></i></span>تحميل PDF</a>
+              </div>
+            </div>
+            <div class="content-card" style="text-align:center" data-reveal data-delay="1">
+              <div style="font-size:2rem;margin-bottom:0.75rem">📋</div>
+              <h3>ميزانية 2024</h3>
+              <p>الميزانية السنوية المعتمدة لسنة 2024</p>
+              <div style="display:flex;flex-direction:column;gap:0.5rem;margin-top:1rem">
+                <a href="#" onclick="alert('الملف قيد التحضير')" class="download-btn" style="justify-content:center"><span class="icon"><i class="fas fa-file-pdf"></i></span>تحميل PDF</a>
+              </div>
+            </div>
+            <div class="content-card" style="text-align:center" data-reveal data-delay="2">
+              <div style="font-size:2rem;margin-bottom:0.75rem">📋</div>
+              <h3>ميزانية 2023</h3>
+              <p>الميزانية السنوية المعتمدة لسنة 2023</p>
+              <div style="display:flex;flex-direction:column;gap:0.5rem;margin-top:1rem">
+                <a href="#" onclick="alert('الملف قيد التحضير')" class="download-btn" style="justify-content:center"><span class="icon"><i class="fas fa-file-pdf"></i></span>تحميل PDF</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="citizen" role="tabpanel">
+          <div class="page-layout">
+            <div>
+              <div class="content-card" data-reveal>
+                <h3>ميزانية المواطن — 2025</h3>
+                <p>ميزانية المواطن هي نسخة مبسطة وميسرة من الميزانية السنوية الرسمية، تهدف إلى تمكين المواطن من الاطلاع على كيفية صرف الموارد العمومية وتوجيه الإنفاق.</p>
+
+                <!-- Simple budget visualization -->
+                <h4 style="margin-top:1.5rem;margin-bottom:1rem;color:var(--primary-dark)">توزيع النفقات 2025 (تقديري)</h4>
+                <div style="display:flex;flex-direction:column;gap:0.75rem">
+                  <div>
+                    <div style="display:flex;justify-content:space-between;font-size:0.85rem;margin-bottom:4px"><span>البنية التحتية والطرق</span><strong>35%</strong></div>
+                    <div style="height:8px;background:var(--border);border-radius:4px;overflow:hidden"><div style="height:100%;width:35%;background:var(--primary);border-radius:4px"></div></div>
+                  </div>
+                  <div>
+                    <div style="display:flex;justify-content:space-between;font-size:0.85rem;margin-bottom:4px"><span>التجهيزات والخدمات العمومية</span><strong>25%</strong></div>
+                    <div style="height:8px;background:var(--border);border-radius:4px;overflow:hidden"><div style="height:100%;width:25%;background:var(--accent);border-radius:4px"></div></div>
+                  </div>
+                  <div>
+                    <div style="display:flex;justify-content:space-between;font-size:0.85rem;margin-bottom:4px"><span>التعليم والشؤون الاجتماعية</span><strong>20%</strong></div>
+                    <div style="height:8px;background:var(--border);border-radius:4px;overflow:hidden"><div style="height:100%;width:20%;background:#f59e0b;border-radius:4px"></div></div>
+                  </div>
+                  <div>
+                    <div style="display:flex;justify-content:space-between;font-size:0.85rem;margin-bottom:4px"><span>الأجور والنفقات الإدارية</span><strong>15%</strong></div>
+                    <div style="height:8px;background:var(--border);border-radius:4px;overflow:hidden"><div style="height:100%;width:15%;background:#8b5cf6;border-radius:4px"></div></div>
+                  </div>
+                  <div>
+                    <div style="display:flex;justify-content:space-between;font-size:0.85rem;margin-bottom:4px"><span>متفرقات واحتياطي</span><strong>5%</strong></div>
+                    <div style="height:8px;background:var(--border);border-radius:4px;overflow:hidden"><div style="height:100%;width:5%;background:#64748b;border-radius:4px"></div></div>
+                  </div>
+                </div>
+                <div style="margin-top:1.5rem">
+                  <a href="#" onclick="alert('الملف قيد التحضير')" class="download-btn"><span class="icon"><i class="fas fa-file-pdf"></i></span>تحميل ميزانية المواطن 2025</a>
+                </div>
+              </div>
+            </div>
+            <aside>
+              <div class="sidebar-widget">
+                <div class="widget-header">الميزانيات السابقة</div>
+                <div class="widget-body">
+                  <a href="#" onclick="alert('قيد التحضير')" class="widget-link">ميزانية المواطن 2024</a>
+                  <a href="#" onclick="alert('قيد التحضير')" class="widget-link">ميزانية المواطن 2023</a>
+                  <a href="#" onclick="alert('قيد التحضير')" class="widget-link">ميزانية المواطن 2022</a>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="financial" role="tabpanel">
+          <div class="content-card" data-reveal>
+            <h3>القوائم المالية والمحاسبية</h3>
+            <p style="margin-bottom:1.5rem">الحسابات والقوائم المالية المُعتمدة من قِبل المجلس الجماعي</p>
+            <table class="data-table">
+              <thead><tr><th>السنة</th><th>نوع الوثيقة</th><th>الحجم</th><th>التحميل</th></tr></thead>
+              <tbody>
+                <tr><td>2024</td><td>الحساب الإداري</td><td>2.4 MB</td><td><a href="#" onclick="alert('قيد التحضير')" class="btn btn--sm btn--navy" style="border-radius:50px">PDF</a></td></tr>
+                <tr><td>2024</td><td>الحساب المالي</td><td>1.8 MB</td><td><a href="#" onclick="alert('قيد التحضير')" class="btn btn--sm btn--navy" style="border-radius:50px">PDF</a></td></tr>
+                <tr><td>2023</td><td>الحساب الإداري</td><td>2.1 MB</td><td><a href="#" onclick="alert('قيد التحضير')" class="btn btn--sm btn--navy" style="border-radius:50px">PDF</a></td></tr>
+                <tr><td>2023</td><td>الحساب المالي</td><td>1.6 MB</td><td><a href="#" onclick="alert('قيد التحضير')" class="btn btn--sm btn--navy" style="border-radius:50px">PDF</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer-mount"></div>
+<script src="js/partials.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

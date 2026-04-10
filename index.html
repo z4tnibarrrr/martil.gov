@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>جماعة مرتيل | بوابة المدينة الذكية</title>
+  <meta name="description" content="البوابة الرسمية لجماعة مرتيل. تعرف على الأخبار، الخدمات، المشاريع، وكل ما يهم المدينة." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Tilt JS for 3D card effects -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+</head>
+<body class="is-home" data-inject="true" data-page="home">
+<div id="site-header-mount"></div>
+
+<main id="main-content">
+  <!-- Immersive Hero -->
+  <section class="hero-smart">
+    <div class="hero-smart__bg" id="heroBg"></div>
+    <div class="hero-smart__overlay"></div>
+    <div class="hero-smart__content">
+      <span class="hero-smart__subtitle">بوابة المدينة الذكية</span>
+      <h2 class="hero-smart__title">مرحبًا بكم في مرتيل</h2>
+      <p class="hero-smart__desc">نعمل على تقديم خدمات إدارية متميزة وتحسين جودة حياة مواطنينا من خلال الحكامة الجيدة والشفافية والابتكار.</p>
+      <div style="animation: fadeUp 1s 0.8s forwards; opacity: 0;">
+        <a href="services.html" class="btn btn--primary"><i class="fas fa-th-large"></i> استكشف الخدمات</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Floating Cards -->
+  <section class="quick-floating">
+    <div class="container">
+      <div class="quick-floating__grid">
+        <a href="services.html" class="quick-glass-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+          <div class="quick-glass-card__icon"><i class="fas fa-hand-holding-heart"></i></div>
+          <h3>الخدمات</h3>
+          <p>اكتشف الخدمات الإدارية</p>
+        </a>
+        <a href="participation.html" class="quick-glass-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+          <div class="quick-glass-card__icon"><i class="fas fa-bullhorn"></i></div>
+          <h3>الأخبار</h3>
+          <p>مستجدات وإعلانات الجماعة</p>
+        </a>
+        <a href="participation.html#propose" class="quick-glass-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+          <div class="quick-glass-card__icon"><i class="fas fa-file-signature"></i></div>
+          <h3>المساطر / الإجراءات</h3>
+          <p>الوثائق والرخص الإدارية</p>
+        </a>
+        <a href="participation.html#complain" class="quick-glass-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+          <div class="quick-glass-card__icon"><i class="fas fa-headset"></i></div>
+          <h3>الاتصال</h3>
+          <p>تواصل معنا لخدمتكم</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- President Message -->
+  <section class="section president-smart">
+    <div class="container">
+      <div class="president__image-box" data-reveal>
+        <div class="president__image">
+          <img src="assets/img/president.jpg" alt="رئيس جماعة مرتيل" loading="lazy" />
+        </div>
+        <div class="president__badge">
+          <h4>محمد العربي المرابط</h4>
+          <span>رئيس جماعة مرتيل</span>
+        </div>
+      </div>
+      <div class="president__content" data-reveal data-delay="1">
+        <h3>كلمة الرئيس</h3>
+        <p>بسم الله الرحمن الرحيم، والصلاة والسلام على أشرف المرسلين، يسعدني، بصفتي رئيس مجلس جماعة مرتيل، أن أرحب بكم في الموقع الرسمي للجماعة، الذي يحرص من خلاله على تكريس مبادئ الشفافية والمواطنة الفعلية.</p>
+        <p>يُعدّ هذا الموقع همزة وصل بين الجماعة ومواطنيها وشركائها، إذ يتيح لكم الاطلاع على مختلف الخدمات الإدارية، ومتابعة أشغال المجلس الجماعي، والتفاعل مع مختلف برامجه ومشاريعه الرامية إلى تحقيق تنمية مستدامة ذكية تليق بمرتيل.</p>
+        <a href="commune.html" class="btn btn--outline" style="color:var(--primary);border-color:var(--primary);margin-top:1rem">
+          <i class="fas fa-info-circle"></i> اعرف المزيد عن الجماعة
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- News & Announcements -->
+  <section class="section" style="background:var(--bg-color)">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <h2>آخر الأخبار والإعلانات</h2>
+        <span class="line"></span>
+        <p>تابع مستجدات المشاريع والأحداث بجماعة مرتيل</p>
+      </div>
+
+      <div class="grid-layout">
+        <!-- News -->
+        <div class="news-smart-grid">
+          <article class="news-glass" data-reveal>
+            <div class="news-glass__img">
+              <span class="news-badge">خدمة الصالح العام</span>
+              <img src="assets/img/news1.jpg" alt="مبادرة النظافة" loading="lazy" />
+            </div>
+            <div class="news-glass__body">
+              <h4 style="font-weight:700">حملة تنظيف واسعة في أحياء مرتيل بمشاركة شباب المدينة</h4>
+              <span style="color:var(--text-muted);font-size:0.85rem"><i class="far fa-calendar-alt"></i> 12 نوفمبر 2025</span>
+            </div>
+          </article>
+          <article class="news-glass" data-reveal data-delay="1">
+            <div class="news-glass__img">
+              <span class="news-badge">زيارات ميدانية</span>
+              <img src="assets/img/news2.jpg" alt="إشراف ميداني" loading="lazy" />
+            </div>
+            <div class="news-glass__body">
+              <h4 style="font-weight:700">رئيس جماعة مرتيل يقف على تقدم أشغال البنية التحتية</h4>
+              <span style="color:var(--text-muted);font-size:0.85rem"><i class="far fa-calendar-alt"></i> 3 نوفمبر 2025</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Announcements -->
+        <div class="list-group">
+          <div style="margin-bottom:1rem;color:var(--primary);font-weight:700;font-size:1.1rem;border-right:3px solid var(--accent);padding-right:10px" data-reveal>إعلانات إدارية رسمية</div>
+          
+          <a href="#" class="list-item-glass" data-reveal>
+            <div class="list-item-glass__icon"><i class="fas fa-gavel"></i></div>
+            <div>
+              <h4>قرار عاملي رقم 123 بفتح البحث العمومي المتعلق بمشروع مارينا</h4>
+              <span><i class="far fa-calendar-alt"></i> 17 نوفمبر 2025</span>
+            </div>
+          </a>
+          <a href="#" class="list-item-glass" data-reveal>
+            <div class="list-item-glass__icon"><i class="fas fa-file-contract"></i></div>
+            <div>
+              <h4>إعلان عن فتح باب الترشيح لشغل منصب مدير عام لمصالح جماعة مرتيل</h4>
+              <span><i class="far fa-calendar-alt"></i> 10 نوفمبر 2025</span>
+            </div>
+          </a>
+          <a href="#" class="list-item-glass" data-reveal>
+            <div class="list-item-glass__icon"><i class="fas fa-map-marked-alt"></i></div>
+            <div>
+              <h4>تحديد أماكن بيع أضحية العيد بمرتيل لسنة 2024</h4>
+              <span><i class="far fa-calendar-alt"></i> 3 يونيو 2024</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Stats -->
+  <section class="stats-smart">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-glass" data-reveal>
+          <span class="num" data-val="95896">0</span>
+          <span class="label">تعداد السكان</span>
+        </div>
+        <div class="stat-glass" data-reveal data-delay="1">
+          <span class="num" data-val="4">0</span>
+          <span class="label">مقاطعات إدارية</span>
+        </div>
+        <div class="stat-glass" data-reveal data-delay="2">
+          <span class="num" data-val="24">0</span>
+          <span class="label">مؤسسة تعليمية</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Participation -->
+  <section class="section" style="background:#fff">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <h2>المشاركة المواطنة</h2>
+        <span class="line"></span>
+        <p>نؤمن بأهمية رأيك في بناء وتطوير مدينتنا</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:2rem">
+        <div class="glass-panel" style="padding:3rem;background:var(--bg-color)" data-reveal>
+          <div style="font-size:2.5rem;color:var(--accent);margin-bottom:1rem"><i class="fas fa-lightbulb"></i></div>
+          <h3 style="font-size:1.5rem;color:var(--primary);margin-bottom:1rem">لديك مقترح أو فكرة؟</h3>
+          <p style="color:var(--text-muted);margin-bottom:2rem;line-height:1.8">نحن في جماعة مرتيل نرحب بكل الأفكار والمقترحات التي من شأنها المساهمة في تنمية المدينة وتطوير خدماتها. شاركنا رؤيتك لمرتيل الغد.</p>
+          <a href="participation.html#propose" class="btn btn--primary">تقديم مقترح</a>
+        </div>
+        <div class="glass-panel" style="padding:3rem;background:var(--bg-color)" data-reveal data-delay="1">
+          <div style="font-size:2.5rem;color:#ef4444;margin-bottom:1rem"><i class="fas fa-exclamation-triangle"></i></div>
+          <h3 style="font-size:1.5rem;color:var(--primary);margin-bottom:1rem">هل تواجه مشكلة؟</h3>
+          <p style="color:var(--text-muted);margin-bottom:2rem;line-height:1.8">إذا لاحظت مشكلة في البنية التحتية، النظافة، الإنارة، أو أي خدمة من خدمات الجماعة، فلا تتردد في تقديم شكاية. نحن هنا للاستماع وحل المشاكل.</p>
+          <a href="participation.html#complain" class="btn btn--outline" style="background:#ef4444;border-color:#ef4444;color:#fff">تقديم شكاية</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Council Carousel -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <h2>أعضاء المجلس الجماعي</h2>
+        <span class="line"></span>
+        <p>تعرف على أعضاء المجلس الجماعي لمرتيل</p>
+      </div>
+
+      <div class="carousel-wrapper" data-reveal>
+        <button class="carousel-btn carousel-btn--next" id="cNext" aria-label="التالي"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-btn carousel-btn--prev" id="cPrev" aria-label="السابق"><i class="fas fa-chevron-right"></i></button>
+        
+        <div class="carousel-track" id="cTrack">
+          <div class="member-glass">
+            <div class="member-glass__img"><img src="assets/img/president.jpg" alt="محمد العربي المرابط"></div>
+            <div class="member-glass__info">
+              <h4 style="font-weight:700">محمد العربي المرابط</h4>
+              <span style="font-size:0.8rem;color:var(--accent-dark)">الرئيس</span>
+            </div>
+          </div>
+          <div class="member-glass">
+            <div class="member-glass__img"><img src="assets/img/member1.jpg" alt="النائب الرابع"></div>
+            <div class="member-glass__info">
+              <h4 style="font-weight:700">حسن اعلالي</h4>
+              <span style="font-size:0.8rem;color:var(--text-muted)">النائب الرابع للرئيس</span>
+            </div>
+          </div>
+          <div class="member-glass">
+            <div class="member-glass__img"><img src="assets/img/member2.jpg" alt="النائبة الثانية"></div>
+            <div class="member-glass__info">
+              <h4 style="font-weight:700">صافية دروان</h4>
+              <span style="font-size:0.8rem;color:var(--text-muted)">النائبة الثانية للرئيس</span>
+            </div>
+          </div>
+          <div class="member-glass">
+            <div class="member-glass__img"><img src="assets/img/member3.jpg" alt="النائب الثالث"></div>
+            <div class="member-glass__info">
+              <h4 style="font-weight:700">فريد البوكاري</h4>
+              <span style="font-size:0.8rem;color:var(--text-muted)">النائب الثالث للرئيس</span>
+            </div>
+          </div>
+          <div class="member-glass">
+            <div class="member-glass__img"><img src="assets/img/member4.jpg" alt="عضو المجلس"></div>
+            <div class="member-glass__info">
+              <h4 style="font-weight:700">عبد الرحمن زيان</h4>
+              <span style="font-size:0.8rem;color:var(--text-muted)">عضو المجلس</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div style="text-align:center;margin-top:2.5rem" data-reveal>
+        <a href="council.html" class="btn btn--navy"><i class="fas fa-users"></i> عرض جميع الأعضاء</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer-mount"></div>
+<script src="js/partials.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
