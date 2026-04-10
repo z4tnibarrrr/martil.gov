@@ -5,8 +5,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // 1. Mobile Drawer Navigation
-  // Using MutationObserver because Header is injected asynchronously
-  const observer = new MutationObserver(() => {
+  const bindNavEvents = () => {
     const navToggle = document.getElementById('navToggle');
     const drawerClose = document.getElementById('drawerClose');
     const mobileDrawer = document.getElementById('mobileDrawer');
@@ -25,15 +24,28 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = '';
       };
 
-      navToggle.addEventListener('click', openDrawer);
-      drawerClose.addEventListener('click', closeDrawer);
-      drawerOverlay.addEventListener('click', closeDrawer);
-      
-      observer.disconnect(); // Stop observing once bound
+      // Prevent attaching multiple times
+      if (!navToggle.hasAttribute('data-bound')) {
+        navToggle.addEventListener('click', openDrawer);
+        drawerClose.addEventListener('click', closeDrawer);
+        drawerOverlay.addEventListener('click', closeDrawer);
+        navToggle.setAttribute('data-bound', 'true');
+      }
+      return true;
     }
-  });
+    return false;
+  };
 
-  observer.observe(document.body, { childList: true, subtree: true });
+  // Try binding immediately (if injected synchronously by partials.js)
+  if (!bindNavEvents()) {
+    // Fallback: Using MutationObserver because Header is injected asynchronously
+    const observer = new MutationObserver(() => {
+      if (bindNavEvents()) {
+        observer.disconnect();
+      }
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+  }
 
   // 2. Sticky Navbar & Parallax
   const siteHeader = document.getElementById('siteHeader');
